@@ -32,6 +32,11 @@
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
   </div>
+  <div class="field">
+    <%= f.label "Profile Photo" %>
+    <%= f.file_field :profile_image,accept: "image/*" %><br>
+  </div>
+  
 
   <div class="actions">
     <%= f.submit "Create my account" %>
